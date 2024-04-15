@@ -1,0 +1,142 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "teslo-api",
+    "dateExported": "2024-04-15T15:24:30.451Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2d9e131d-ce22-4fb9-8216-7c30912abd57",
+            "colId": "6be3f75f-8225-45d4-aa6c-d3749b11ddb1",
+            "containerId": "",
+            "name": "init",
+            "url": "http://localhost:3000/api/products",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-09T17:06:11.945Z",
+            "modified": "2024-04-09T17:06:32.178Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "16873650-f17a-4385-9e5d-b364f0837cf4",
+            "colId": "6be3f75f-8225-45d4-aa6c-d3749b11ddb1",
+            "containerId": "",
+            "name": "insert",
+            "url": "http://localhost:3000/api/products",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-09T17:06:11.946Z",
+            "modified": "2024-04-11T16:53:50.472Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"CUp xxp 2\",\n  \"sizes\":[\"SM\", \"M\", \"L\"],\n  \"gender\":\"men\",\n  \"images\":[\"https://image1.png\", \"https://image2.png\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bc2f9fcf-f7ec-4540-bcb4-e068e3d1e6ac",
+            "colId": "6be3f75f-8225-45d4-aa6c-d3749b11ddb1",
+            "containerId": "",
+            "name": "delete",
+            "url": "http://localhost:3000/api/products/77c5f96b-15f5-4e80-9f7d-617214cf61e8",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-04-09T17:06:11.947Z",
+            "modified": "2024-04-15T11:08:42.120Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "709f92f5-0b00-402b-b10e-25caf4caa9cd",
+            "colId": "6be3f75f-8225-45d4-aa6c-d3749b11ddb1",
+            "containerId": "",
+            "name": "find",
+            "url": "http://localhost:3000/api/products/shirts_xxp_m",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-09T17:06:11.948Z",
+            "modified": "2024-04-15T09:17:56.661Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "74715008-1ae6-4ee7-aa5c-2bd89fad043d",
+            "colId": "6be3f75f-8225-45d4-aa6c-d3749b11ddb1",
+            "containerId": "",
+            "name": "execute seed",
+            "url": "http://localhost:3000/api/seed",
+            "method": "GET",
+            "sortNum": 41250,
+            "created": "2024-04-15T11:36:09.240Z",
+            "modified": "2024-04-15T11:36:31.204Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5de51078-7779-450d-9757-bee808b602ce",
+            "colId": "6be3f75f-8225-45d4-aa6c-d3749b11ddb1",
+            "containerId": "",
+            "name": "path",
+            "url": "http://localhost:3000/api/products/77c5f96b-15f5-4e80-9f7d-617214cf61e8",
+            "method": "PATCH",
+            "sortNum": 42500,
+            "created": "2024-04-10T10:34:58.383Z",
+            "modified": "2024-04-15T10:19:15.184Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"price\":322,\n  \"images\": [\"img 4\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "158f0492-ff6f-49c8-983d-89dcb64d1978",
+            "colId": "6be3f75f-8225-45d4-aa6c-d3749b11ddb1",
+            "containerId": "",
+            "name": "find all",
+            "url": "http://localhost:3000/api/products",
+            "method": "GET",
+            "sortNum": 45000,
+            "created": "2024-04-10T09:45:53.601Z",
+            "modified": "2024-04-15T15:23:13.247Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fce57db1-7e69-42a4-a44d-867b30646945",
+            "colId": "6be3f75f-8225-45d4-aa6c-d3749b11ddb1",
+            "containerId": "",
+            "name": "get all paginado",
+            "url": "http://localhost:3000/api/products?limit=1",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-04-09T17:06:11.949Z",
+            "modified": "2024-04-10T09:45:43.389Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limit",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
