@@ -5,14 +5,13 @@ import {
   Logger,
   NotFoundException,
 } from '@nestjs/common';
+import { validate as isUUID } from 'uuid';
+import { InjectRepository } from '@nestjs/typeorm';
+import { DataSource, Repository } from 'typeorm';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
-import { DataSource, Repository } from 'typeorm';
-import { InjectRepository } from '@nestjs/typeorm';
 import { Product, ProductImage } from './entities';
-import {} from 'typeorm';
 import { PaginationDto } from 'src/common/dtos/pagination.dto';
-import { validate as isUUID } from 'uuid';
 
 @Injectable()
 export class ProductsService {
