@@ -14,7 +14,7 @@
 
 ## Running the app
 
-1. Clonar repo
+1. Clonar repositorio
 ```bash
 $ git clone
 ```
@@ -26,12 +26,19 @@ $ npm install
 
 3. Clonar archivo __.env.template__ y renombrar la copia a __.env__
 
-4. Levantar BD
+4. Cambiar variables de entorno
+
+5. Levantar BD
 ```bash
 $ docker-compose up -d
 ```
 
-5. Ejecutar
+6. Ejecutar SEED
+```
+http://localhost:3000/api/seed
+```
+
+7. Ejecutar
 ```bash
 # development
 $ npm run start
