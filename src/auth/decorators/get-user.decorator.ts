@@ -19,7 +19,6 @@ export const GetUser = createParamDecorator(
 
     var returnUser = {};
     params.map((param) => {
-      console.log('pa->', param);
       returnUser[param] = user[param];
     });
 
